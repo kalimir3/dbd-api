@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addons",
+  "info": {
+    "name": "Addon",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Nazev": {
+      "type": "string"
+    },
+    "Charges": {
+      "type": "integer"
+    },
+    "HealBonus": {
+      "type": "integer"
+    },
+    "RepairBonus": {
+      "type": "integer"
+    },
+    "itemType": {
+      "type": "string"
+    },
+    "Ikona": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Popis": {
+      "type": "text"
+    }
+  }
+}

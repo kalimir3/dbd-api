@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/perk-builds",
+      "handler": "perk-build.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/perk-builds/count",
+      "handler": "perk-build.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/perk-builds/:id",
+      "handler": "perk-build.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/perk-builds",
+      "handler": "perk-build.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/perk-builds/:id",
+      "handler": "perk-build.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/perk-builds/:id",
+      "handler": "perk-build.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

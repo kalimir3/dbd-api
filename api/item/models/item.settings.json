@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "name": "Item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Nazev": {
+      "type": "string"
+    },
+    "Charges": {
+      "type": "integer"
+    },
+    "HealBonus": {
+      "type": "integer"
+    },
+    "SelfcareBonus": {
+      "type": "integer"
+    },
+    "Efficiency": {
+      "type": "integer"
+    },
+    "RepairBonus": {
+      "type": "integer"
+    },
+    "ItemType": {
+      "type": "string"
+    },
+    "Ikona": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Popis": {
+      "type": "text"
+    }
+  }
+}

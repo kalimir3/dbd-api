@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "perks",
+  "info": {
+    "name": "Perk",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Nazev": {
+      "type": "string"
+    },
+    "Popis": {
+      "type": "text"
+    },
+    "Ikona": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "slug": {
+      "type": "string"
+    },
+    "HealBonus": {
+      "type": "integer"
+    },
+    "Efficiency": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "perk_builds",
+  "info": {
+    "name": "PerkBuild",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Nazev": {
+      "type": "string"
+    },
+    "Perks": {
+      "type": "json"
+    },
+    "Items": {
+      "type": "json"
+    }
+  }
+}
